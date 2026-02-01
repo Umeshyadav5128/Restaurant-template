@@ -2,29 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>BD Restaurant</title>
+        <title>Butki Restaurant</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
 
         <!-- Favicons -->
-        <link href="img/favicon.ico" rel="icon">
-        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+        <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Nunito:600,700,800,900" rel="stylesheet"> 
 
         <!-- Bootstrap CSS File -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Libraries CSS Files -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="vendor/animate/animate.min.css" rel="stylesheet">
-        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/animate/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
 
         <!-- Main Stylesheet File -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -34,7 +34,7 @@
             <!-- Top Header Start -->
             <section id="top-header">
                 <div class="logo">
-                    <img src="img/logo.png" />
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" />
                 </div>
                 
                 <div id="header-slider" class="carousel slide" data-ride="carousel">
@@ -47,26 +47,26 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="fill" style="background-image:url('img/slider-1.jpg');"></div>
+                            <div class="fill" style="background-image:url('{{ url_for('static', filename='img/slider-1.jpg') }}');"></div>
                             <div class="carousel-caption">
-                                <h2 class="animated fadeInLeft">Local Fresh Cuisine</h2>
-                                <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <h2 class="animated fadeInLeft">Butki Fresh Cuisine</h2>
+                                <p class="animated fadeInUp">Crafted with Love, Served with Soul — by Anjali Yadav</p>
                                 <p class="animated fadeInUp"><a href="https://htmlcodex.com" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="fill" style="background-image:url('img/slider-2.jpg');"></div>
+                            <div class="fill" style="background-image:url('{{ url_for('static', filename='img/slider-2.jpg') }}');"></div>
                             <div class="carousel-caption">
                                 <h2 class="animated fadeInDown">Comfortable Dining Room</h2>
-                                <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <p class="animated fadeInUp">Butki ipsum dolor sit amet consectetur adipisicing elit</p>
                                 <p class="animated fadeInUp"><a href="https://htmlcodex.com" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="fill" style="background-image:url('img/slider-3.jpg');"></div>
+                            <div class="fill" style="background-image:url('{{ url_for('static', filename='img/slider-3.jpg') }}');"></div>
                             <div class="carousel-caption">
                                 <h2 class="animated fadeInRight">Nice Space</h2>
-                                <p class="animated fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <p class="animated fadeInRight">Butki ipsum dolor sit amet consectetur adipisicing elit</p>
                                 <p class="animated fadeInRight"><a href="https://htmlcodex.com" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="about-col-left">
-                                <img class="img-fluid" src="img/about-us.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/about-us.jpg') }}" />
                             </div>
                         </div>
 
@@ -136,7 +136,7 @@
                                             <li><a href="#" class="fa fa-google-plus"></a></li>
                                         </ul>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam sed tincidunt accumsan. Aliquam at tincidunt tortor, ac porta turpis. Curabitur lacinia venenatis semper.
+                                            Butki ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam sed tincidunt accumsan. Aliquam at tincidunt tortor, ac porta turpis. Curabitur lacinia venenatis semper.
                                         </p>
                                         <p>
                                             Aliquam ut nibh ut lacus posuere facilisis. Vestibulum ullamcorper arcu et bibendum ultrices. Suspendisse rutrum turpis vitae.
@@ -149,7 +149,7 @@
                                         <div class="about-col">
                                             <h4>Our Features</h4>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
+                                                Butki ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
                                             </p>
                                         </div>
                                     </div>
@@ -157,7 +157,7 @@
                                         <div class="about-col">
                                             <h4>Our Facilities</h4>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
+                                                Butki ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
                                             </p>
                                         </div>
                                     </div>
@@ -232,16 +232,16 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-1.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-1.jpg') }}" />
                                 <h4>Lorem ipsum</h4>
                                 <span>$20.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-2.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-2.jpg') }}" />
                                 <h4>Curabitur Commodo</h4>
                                 <span>$10.00 / Person</span>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -250,25 +250,25 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-3.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-3.jpg') }}" />
                                 <h4>Proin Tortor</h4>
                                 <span>$12.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-4.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-4.jpg') }}" />
                                 <h4>Aliquam Erat</h4>
                                 <span>$8.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-5.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-5.jpg') }}" />
                                 <h4>Curabitur Arcu Massa</h4>
                                 <span>$18.00 / Person</span>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -277,25 +277,25 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-6.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-6.jpg') }}" />
                                 <h4>Vestibulum Fringilla</h4>
                                 <span>$15.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-7.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-7.jpg') }}" />
                                 <h4>Ullamcorper Facilisis </h4>
                                 <span>$10.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-8.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-8.jpg') }}" />
                                 <h4>Integer Ullamcorper</h4>
                                 <span>$22.00 / Person</span>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -304,10 +304,10 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 d-sm-none d-md-block d-lg-none">
                             <div class="single-menu">
-                                <img class="img-fluid" src="img/menu-9.jpg" />
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/menu-9.jpg') }}" />
                                 <h4>Vestibulum Posuere</h4>
                                 <span>$16.00 / Person</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p>Butki ipsum dolor sit amet consectetur adipisicing.</p>
                                 <a href="order.html">Order Now</a>
                             </div>
                         </div>
@@ -326,8 +326,8 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
                             <div class="single-team">
-                                <img src="img/team-1.jpg" alt="">
-                                <h4>Don Dennis</h4>
+                                <img src="{{ url_for('static', filename='img/team-1.jpg') }}" alt="">
+                                <h4>Vivek Yadav</h4>
                                 <p>Assistant Chef</p>
                                 <ul class="icon">
                                     <li><a href="#" class="fa fa-twitter"></a></li>
@@ -339,8 +339,8 @@
 
                         <div class="col-sm-6 col-md-3">
                             <div class="single-team">
-                                <img src="img/team-2.jpg" alt="">
-                                <h4>Mary Tejeda</h4>
+                                <img src="{{ url_for('static', filename='img/team-2.jpg') }}" alt="">
+                                <h4>Gudiya</h4>
                                 <p>Assistant Chef</p>
                                 <ul class="icon">
                                     <li><a href="#" class="fa fa-twitter"></a></li>
@@ -352,8 +352,8 @@
 
                         <div class="col-sm-6 col-md-3">
                             <div class="single-team">
-                                <img src="img/team-3.jpg" alt="">
-                                <h4>Scott Williams</h4>
+                                <img src="{{ url_for('static', filename='img/team-3.jpg') }}" alt="">
+                                <h4>Abhishek</h4>
                                 <p>Assistant Chef</p>
                                 <ul class="icon">
                                     <li><a href="#" class="fa fa-twitter"></a></li>
@@ -365,8 +365,8 @@
                         
                         <div class="col-sm-6 col-md-3">
                             <div class="single-team">
-                                <img src="img/team-4.jpg" alt="">
-                                <h4>Mary Hall</h4>
+                                <img src="{{ url_for('static', filename='img/team-4.jpg') }}" alt="">
+                                <h4>shivani</h4>
                                 <p>Assistant Chef</p>
                                 <ul class="icon">
                                     <li><a href="#" class="fa fa-twitter"></a></li>
@@ -390,7 +390,7 @@
                     <div class="owl-carousel testimonials-carousel">
                         <div class="row testimonial-item">
                             <div class="col-sm-4">
-                                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+                                <img src="{{ url_for('static', filename='img/testimonial-1.jpg') }}" class="testimonial-img" alt="">
                             </div>
                             <div class="col-sm-8">
                                 <div class="testimonial-content">
@@ -409,7 +409,7 @@
 
                         <div class="row testimonial-item">
                             <div class="col-sm-4">
-                                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+                                <img src="{{ url_for('static', filename='img/testimonial-2.jpg') }}" class="testimonial-img" alt="">
                             </div>
                             <div class="col-sm-8">
                                 <div class="testimonial-content">
@@ -428,7 +428,7 @@
 
                         <div class="row testimonial-item">
                             <div class="col-sm-4">
-                                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+                                <img src="{{ url_for('static', filename='img/testimonial-3.jpg') }}" class="testimonial-img" alt="">
                             </div>
                             <div class="col-sm-8">
                                 <div class="testimonial-content">
@@ -469,9 +469,10 @@
 
                                     <div class="contact-info">
                                         <h4>Contact Info</h4>
-                                        <p>4137  State Street, CA, USA</p>
-                                        <p><a href="tel:+1-234-567-8900">+1-234-567-8900</a></p>
-                                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                        <p>Pihani , Hardoi - 241304, India
+                                        </p>
+                                        <p><a href="tel:+1-234-567-8900">6393148450</a></p>
+                                        <p><a href="mailto:info@example.com"></a>anjaliiasmission2030@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -523,7 +524,7 @@
                             <div class="copyright">
                                 <p>&copy; Copyright <a href="">Your Site Name</a>. All Rights Reserved</p>
 								
-								<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+								<!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 								<p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
                             </div>
                         </div>
@@ -546,20 +547,20 @@
         </main>
 
         <!-- JavaScript Libraries -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/jquery/jquery-migrate.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/easing/easing.min.js"></script>
-        <script src="vendor/stickyjs/sticky.js"></script>
-        <script src="vendor/superfish/hoverIntent.js"></script>
-        <script src="vendor/superfish/superfish.min.js"></script>
-        <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-        <script src="vendor/tempusdominus/js/moment.min.js"></script>
-        <script src="vendor/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/jquery/jquery-migrate.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/easing/easing.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/stickyjs/sticky.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/superfish/hoverIntent.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/superfish/superfish.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/tempusdominus/js/moment.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/tempusdominus/js/moment-timezone.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
         <!-- Main Javascript File -->
-        <script src="js/main.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
     </body>
 </html>
